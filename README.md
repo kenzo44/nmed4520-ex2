@@ -3,6 +3,7 @@ Use the Atomic Design framework to design and develop a website for the content 
 
 # Trivia
 * Designed website in Figma and then developed from ground up
+* Box colors change on refresh of page - used a simple array to store colors and then a random generator to cycle through them
 * No foreign code used
 * It WORKS!!!
 

@@ -1,0 +1,71 @@
+/*Fonts*/
+@font-face {
+    src: url(../font/animeace2_reg.ttf);
+    font-family: Animeace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+/* Credit to codepen for comic background in css and title style - https://codepen.io/ashandrien/pen/rnzsd */
+body {
+    background-image: radial-gradient(ellipse farthest-corner, transparent 0%, transparent 35%, #fff 30%, #fff 40%, transparent 90%), radial-gradient(ellipse farthest-corner at 0px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), radial-gradient(ellipse farthest-corner at 8px 8px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), radial-gradient(ellipse farthest-corner at 0px 8px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 40%), radial-gradient(ellipse farthest-corner at 8px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), linear-gradient(40deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%);
+    background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
+}
+
+.title {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.title>h1 {
+    font-family: Animeace;
+    font-size: 3em;
+    text-shadow: #ffffff -1px 1px, #ffffff -2px 2px, #ffffff -3px 3px, #ffffff -4px 4px, #ffffff -5px 5px;
+}
+
+.textBox {
+    display: block;
+    background: #fff;
+    padding: 40px;
+    font: 22px/1.8 Comic Sans, Comic Sans MS;
+}
+
+.story-container {
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    -ms-flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 55vw;
+}
+
+.item {
+    width: 33.3%;
+    padding: 5px;
+}
+
+.item:hover img:hover {
+    transform: scale(1.5);
+}
+.footer{
+    display: block;
+    background: #fff;
+    font-size: 15px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

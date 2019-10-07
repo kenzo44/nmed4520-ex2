@@ -1,0 +1,168 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    min-height: 10vh;
+    background-color: #223a79;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px 0 150px;
+}
+
+.container {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header>.btn {
+    font-family: 'Varela Round', sans-serif;
+    color: #FDDA1C;
+    border: 1px solid #FDDA1C;
+    padding: 13px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header>.btn:hover {
+    border: 2px solid #FDDA1C;
+}
+a { color: inherit; } 
+main {
+    margin: 60px 150px 60px 150px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    -webkit-column-gap: 20px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px;
+    /* Firefox */
+    column-gap: 20px;
+    row-gap: 60px;
+}
+
+/* navigation */
+nav{
+    display: block;
+    min-height: 8vh;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    color: #223a79;
+    font-size: 30px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #223a79;
+    font-size: 35px;
+}
+.story {
+    font: 17px/1.5 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.story_winner {
+    padding: 0px 20px 20px 20px;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 5vw);
+}
+
+.story_winner>.story_month {
+    color: #333;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.story_winner>.story_prize {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.story_winner>.story_text {
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.story_winner>.story_author {
+    color: #1da1f2;
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+/* Main calendar timeline */
+.year {
+    display: flex;
+    flex-wrap: wrap;
+}
+.month{
+    text-align: right;
+    padding: 0px 20px;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 64px;
+    flex: 1 0 21%; /* explanation below */
+    margin: 20px;
+    height: 200px;
+    border-radius: 10px;
+}
+.month > .img_prize{
+    margin: 20px 50px 0px 0px;
+}
+.year_2019 {
+    grid-column-start: 2;
+    grid-column-end: 13;
+    grid-row-start: 7;
+    grid-row-end: 15;
+
+}
+.year_2018 {
+    grid-column-start: 2;
+    grid-column-end: 13;
+    grid-row-start: 15;
+    grid-row-end: 18;
+}
+.year_2017 {
+    grid-column-start: 2;
+    grid-column-end: 13;
+    grid-row-start: 18;
+    grid-row-end: 22;
+}
+footer{
+    text-align: center;
+    width: 100%;
+    padding: 1px;
+    background-color: #223a79;
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue;
+}

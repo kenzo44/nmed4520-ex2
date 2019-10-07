@@ -1,0 +1,119 @@
+/*Fonts*/
+@font-face {
+    src: url(../font/animeace2_reg.ttf);
+    font-family: Animeace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+img{
+    width: 100%;
+}
+
+
+/* Credit to codepen for comic background in css and title style - https://codepen.io/ashandrien/pen/rnzsd */
+body {
+    background-image: radial-gradient(ellipse farthest-corner, transparent 0%, transparent 35%, #fff 30%, #fff 40%, transparent 90%), radial-gradient(ellipse farthest-corner at 0px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), radial-gradient(ellipse farthest-corner at 8px 8px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), radial-gradient(ellipse farthest-corner at 0px 8px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 40%), radial-gradient(ellipse farthest-corner at 8px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), linear-gradient(40deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%);
+    background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
+}
+
+.title {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.title>h1 {
+    font-family: Animeace;
+    font-size: 3em;
+    text-shadow: #ffffff -1px 1px, #ffffff -2px 2px, #ffffff -3px 3px, #ffffff -4px 4px, #ffffff -5px 5px;
+}
+
+.textBox {
+    display: block;
+    background: #fff;
+    padding: 40px;
+    font: 22px/1.8 Comic Sans, Comic Sans MS;
+}
+
+.story-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    padding-bottom: 80px;
+}
+.item {
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.item--1:hover{
+    transform: rotate(20deg);
+}
+.item--2:hover{
+    transform: rotate(-15deg);
+}
+.item--3:hover{
+    transform: rotate(-15deg);
+}
+.item--4:hover{
+    transform: rotate(15deg);
+}
+
+.item--1 {
+    background: url("../images/eco.jpg") no-repeat;
+    
+    background-size:cover;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    transform: scale(1.5);
+    transform: rotate(-20deg);
+    z-index: 3;
+}
+.item--2 {
+    background: url("../images/bag.jpg") no-repeat;
+    background-size:cover;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    transform: scale(1.5);
+    transform: rotate(45deg);
+    z-index: 2;
+}
+.item--3 {
+    background: url("../images/hanks.jpg") no-repeat;
+    background-size:cover;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    transform: rotate(15deg);
+  
+}
+.item--4 {
+    background: url("../images/me.jpg") no-repeat;
+    background-size:cover;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 9;
+    transform: rotate(-10deg);
+}
+.footer{
+    display: block;
+    background: #fff;
+    font-size: 15px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

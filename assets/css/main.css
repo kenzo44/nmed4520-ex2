@@ -127,6 +127,8 @@ nav a:hover{
     flex-wrap: wrap;
 }
 .month{
+    display: flex;
+    flex-direction: column;
     text-align: right;
     padding: 0px 20px;
     font-family: 'Frank Ruhl Libre', serif;
@@ -137,7 +139,8 @@ nav a:hover{
     border-radius: 10px;
 }
 .month > .img_prize{
-    margin: 20px 50px 0px 0px;
+    margin-top: 10px; 
+    align-self: center;
 }
 .year_2019 {
     grid-column-start: 2;
